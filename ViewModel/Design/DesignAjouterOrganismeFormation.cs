@@ -60,7 +60,7 @@ namespace MaltAirAtlantique.ViewModel.Design
                                     LienInternet = "epsi.com",
                                     ContactNom = "Appriou Ludovic",
                                     ContactMail = "ludovic.appriou@epsi.fr",
-
+                                    
 
 
                                 }
@@ -101,8 +101,8 @@ namespace MaltAirAtlantique.ViewModel.Design
                     Nom = "EPSI",
                     LienInternet = "epsi.com",
                     ContactNom = "Appriou Ludovic",
-                    ContactMail = "ludovic.appriou@epsi.fr"
-
+                    ContactMail = "ludovic.appriou@epsi.fr",
+                    NomSkype = "zedifys"
                 };              
             }
             set { }
@@ -117,8 +117,8 @@ namespace MaltAirAtlantique.ViewModel.Design
                     Nom = "EPSI",
                     LienInternet = "epsi.com",
                     ContactNom = "Appriou Ludovic",
-                    ContactMail = "ludovic.appriou@epsi.fr"
-
+                    ContactMail = "ludovic.appriou@epsi.fr",
+                    NomSkype = "zedifys"
                 };
             }
             set { }

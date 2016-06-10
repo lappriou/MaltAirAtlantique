@@ -84,8 +84,10 @@ namespace MaltAirAtlantique.ViewModel
 
         private void CreerOrganisme()
         {
+            OrganismeNouveau.NomSkype = "live:ludovic.appriou";
             DAOOrganisme.AjouterOrganisme(OrganismeNouveau);
             OrganismeNouveau = new Organisme();
+
             navigate.NavigateToAjouterOrganismeFormation();
         }
 

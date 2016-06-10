@@ -124,6 +124,8 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
@@ -137,8 +139,9 @@
                 <TextBox x:Name="SiteON" Grid.Column="1" Grid.Row="1"  Text="{Binding LienInternet}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto" Height="auto" TextWrapping="Wrap" MinWidth="100" MinHeight="20" FontSize="14" />
                 <TextBox x:Name="NCON" Grid.Column="1" Grid.Row="2" Text="{Binding ContactNom}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto" Height="auto" TextWrapping="Wrap" MinWidth="100" MinHeight="20" FontSize="14" />
                 <TextBox x:Name="MCON" Grid.Column="1" Grid.Row="3" Text="{Binding ContactMail}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto" Height="auto" TextWrapping="Wrap" MinWidth="100" MinHeight="20" FontSize="14" />
-
-
+                <Label x:Name="LabelSkypeContactOrganismeNouveau" Content="Nom Skype"  Grid.Row="4"  Width="auto" Height="auto" Background="Azure"  FontSize="14"   Foreground="Red" FontFamily="Segoe UI Black" FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"/>
+                <TextBox x:Name="Skype" Grid.Column="1" Grid.Row="4" Text="{Binding NomSkype}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto" Height="auto" TextWrapping="Wrap" MinWidth="100" MinHeight="20" FontSize="14" />
+                <TextBox x:Name="valid" Grid.Column="1" Grid.Row="5"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="0" Height="0" TextWrapping="Wrap"  />
             </Grid>
             <Label x:Name="labelOrganismeNouveau" Content="Nouvel Organisme" Width="auto" Height="auto" Background="Azure"  FontSize="21.333" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Red" FontFamily="Segoe UI Black" FontWeight="Bold" FontStyle="Italic" Margin="5"/>
 

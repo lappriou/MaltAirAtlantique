@@ -46,6 +46,15 @@ namespace MaltAirAtlantique.ViewModel
 
 
         }
+        private bool _nameSkype ;
+        public bool NameSkype
+        {
+            get { return _nameSkype; }
+            set { NotifyPropertyChanged(ref _nameSkype, value); }
+
+
+
+        }
         #endregion
 
         #region privatePropetie
@@ -63,6 +72,8 @@ namespace MaltAirAtlantique.ViewModel
             this.DetailOrganismeFormationCommand = new RelayCommand(DetailOrganismeFormation);
             this.ListeSessionConcerne = DAOSession.ListerSessionPourUnOrganisme(OrganismeConcerne);
             this.DetailSessionCommand = new RelayCommand(DetailSession);
+            this.AppelSkypeCommand = new RelayCommand(AppelSkype);
+            this.NameSkype = this.OrganismeConcerne.NomSkype == null ? false : true;
         }
 
 
@@ -71,13 +82,8 @@ namespace MaltAirAtlantique.ViewModel
         public ICommand CreerSessionCommand { get; private set; }
         public ICommand DetailOrganismeFormationCommand { get; private set; }
         public ICommand DetailSessionCommand { get; private set; }
+        public ICommand AppelSkypeCommand { get; private set; }
         #region private Methods
-
-
-       
-
-       
-
 
 
         private void DetailSession()
@@ -92,6 +98,11 @@ namespace MaltAirAtlantique.ViewModel
             LaNavigation.Formation = OrganismeFormationSelectionner.FormationConcerne;
             
             navigate.NavigateToDetailFormation();
+        }
+
+        private void AppelSkype()
+        {
+            OrganismeConcerne.CallToBySkype();
         }
 
         #endregion

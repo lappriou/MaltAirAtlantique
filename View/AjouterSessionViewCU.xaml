@@ -89,7 +89,12 @@
                         <Label x:Name="LabelOrganisme" Content="Organisme" HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto"  FontSize="12"   Foreground="Red" FontFamily="Segoe UI Black" FontWeight="Bold" FontStyle="Italic" Margin="5" />
                         <ComboBox x:Name="comboBoxOrganisme" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto"  FontSize="12" MinWidth="100" Margin="5" ItemsSource="{Binding FormationConcerne.ListOrganismes}" DisplayMemberPath="OrganismeConcerne.Nom" SelectedItem="{Binding OrganismeFormationConcerne}"/>
                     </Grid>
-                    <TextBlock x:Name="Site" Width="auto" MinWidth="100" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="{Binding OrganismeFormationConcerne.OrganismeConcerne.LienInternet}" Margin="5"/>
+                    <TextBlock x:Name="Site" Width="auto" MinWidth="100" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="1" TextWrapping="Wrap" Text="{Binding OrganismeFormationConcerne.OrganismeConcerne.LienInternet}" Margin="10,5,84,5"/>
+                    <MenuItem x:Name="Skype"   Command="{Binding AppelSkypeCommand}"  BorderBrush="{x:Null}" FontFamily="Tahoma" HorizontalAlignment="Right" Margin="0,0,10,3" Foreground="{x:Null}" Width="58"  Grid.Row="1" >
+                        <MenuItem.Background>
+                            <ImageBrush ImageSource="/MaltAirAtlantique;component/Src/logo/callbutton_16px.png" Stretch="Uniform"/>
+                        </MenuItem.Background>
+                    </MenuItem>
                 </Grid>
                 <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Background="Azure" Opacity="0.7" Margin="10">
                     <Grid.ColumnDefinitions>

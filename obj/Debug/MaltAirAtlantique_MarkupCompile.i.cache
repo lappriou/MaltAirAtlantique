@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique\obj\Debug\
+D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\obj\Debug\
 MaltAirAtlantique
 none
 false
 DEBUG;TRACE
-D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique\App.xaml
+D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\App.xaml
 161616836360
 
-101-87204507
-761609775366
+103-2131085142
+76-331426792
 View\AjouterEmployeeViewCU.xaml;View\AjouterFormationViewCU.xaml;View\AjouterOFViewCU.xaml;View\AjouterPosteViewCU.xaml;View\AjouterSessionViewCU.xaml;View\DetailEmployeeViewCU.xaml;View\DetailFormationViewCU.xaml;View\DetailOrganismeViewCU.xaml;View\DetailPosteViewCU.xaml;View\DetailSessionViewCU.xaml;View\AcceuilView.xaml;View\ListeEmployeeViewCU.xaml;View\ListeFormationViewCU.xaml;View\ListePosteViewCU.xaml;View\ListeSessionViewCU.xaml;View\NotificationViewCU.xaml;
 
-False
+True
 

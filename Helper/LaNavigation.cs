@@ -50,6 +50,16 @@ namespace MaltAirAtlantique.Helper
             Accueil.MenuSession.Background = Brushes.Azure;
         }
 
+        public void NavigateToListePoste()
+        {
+            Init();
+            InitVariable();
+            Accueil.MenuPoste.IsEnabled = false;
+            Accueil.MenuPoste.Background = Brushes.Azure;
+            Accueil.stkContenu.Content = new ListePosteViewCU();
+
+        }
+
         public void NavigateToAjouterSession()
         {
             Init();
@@ -143,13 +153,7 @@ namespace MaltAirAtlantique.Helper
 
         }
 
-        public void NavigateToListePoste()
-        {
-            Init();
-            InitVariable();
-            Accueil.stkContenu.Content = new ListePosteViewCU();
 
-        }
 
 
 

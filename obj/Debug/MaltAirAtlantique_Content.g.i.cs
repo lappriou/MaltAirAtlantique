@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("src/boeing-787-wallpaper2.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("src/logo/callbutton_16px.png")]
 
 

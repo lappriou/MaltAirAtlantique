@@ -101,6 +101,10 @@
     <Compile Include="Migrations\201605211534087_Rajout bool dans session.Designer.cs">
       <DependentUpon>201605211534087_Rajout bool dans session.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606100832474_Skype .cs" />
+    <Compile Include="Migrations\201606100832474_Skype .Designer.cs">
+      <DependentUpon>201606100832474_Skype .cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DAO\DAOEmploye.cs" />
     <Compile Include="Model\DAO\DAOEmployeeFormation.cs" />
@@ -310,6 +314,9 @@
     <EmbeddedResource Include="Migrations\201605211534087_Rajout bool dans session.resx">
       <DependentUpon>201605211534087_Rajout bool dans session.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606100832474_Skype .resx">
+      <DependentUpon>201606100832474_Skype .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -337,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Src\boeing-787-wallpaper2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Src\logo\callbutton_16px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
