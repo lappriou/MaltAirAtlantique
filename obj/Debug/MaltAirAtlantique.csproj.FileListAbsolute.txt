@@ -199,3 +199,4 @@ D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\obj\Debug\Ma
 D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\obj\Debug\MaltAirAtlantique.Properties.Resources.resources
 D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\obj\Debug\MaltAirAtlantique.csproj.GenerateResource.Cache
 D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique - github\obj\Debug\MaltAirAtlantique.Migrations.Skype.resources
+D:\Documents\Visual Studio 2015\Projects\MaltAirAtlantique\obj\Debug\MaltAirAtlantique.Migrations.Skype.resources

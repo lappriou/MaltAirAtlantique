@@ -90,6 +90,7 @@ namespace MaltAirAtlantique.ViewModel
 
         private void CreerSession()
         {
+            LaNavigation.Formation = Formation;
             navigate.NavigateToAjouterSession();  
         }
 

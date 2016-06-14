@@ -98,24 +98,32 @@ namespace MaltAirAtlantique.ViewModel
 
         private void DetailOrganisme()
         {
-            
-            LaNavigation.Organisme = this.SessionConcerne.OrganismeFomationConcerne.OrganismeConcerne;
-            navigate.NavigateToDetailOrganisme();
+            if (this.SessionConcerne.OrganismeFomationConcerne.OrganismeConcerne != null)
+            {
+                LaNavigation.Organisme = this.SessionConcerne.OrganismeFomationConcerne.OrganismeConcerne;
+                navigate.NavigateToDetailOrganisme();
+            }
         }
 
 
         private void DetailFormation()
         {
-            LaNavigation.Formation = this.SessionConcerne.OrganismeFomationConcerne.FormationConcerne;
-            navigate.NavigateToDetailFormation();
+            if (SessionConcerne.OrganismeFomationConcerne.FormationConcerne != null)
+            {
+                LaNavigation.Formation = this.SessionConcerne.OrganismeFomationConcerne.FormationConcerne;
+                navigate.NavigateToDetailFormation();
+            }
         }
 
 
 
         private void DetailEmployee()
         {
-            LaNavigation.Employee = DetailEmployeeSelectionner.EmployeeConcerne;
-            navigate.NavigateToDetailEmployee();
+            if (DetailEmployeeSelectionner.EmployeeConcerne != null)
+            {
+                LaNavigation.Employee = DetailEmployeeSelectionner.EmployeeConcerne;
+                navigate.NavigateToDetailEmployee();
+            }
         }
 
 

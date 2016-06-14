@@ -88,16 +88,22 @@ namespace MaltAirAtlantique.ViewModel
 
         private void DetailSession()
         {
-            LaNavigation.Session = SessionSelectionner;
-            navigate.NavigateToDetailSession();
+            if (SessionSelectionner != null)
+            {
+                LaNavigation.Session = SessionSelectionner;
+                navigate.NavigateToDetailSession();
+            }
         }
 
 
         private void DetailOrganismeFormation()
         {
-            LaNavigation.Formation = OrganismeFormationSelectionner.FormationConcerne;
-            
-            navigate.NavigateToDetailFormation();
+            if (OrganismeFormationSelectionner.FormationConcerne != null)
+            {
+                LaNavigation.Formation = OrganismeFormationSelectionner.FormationConcerne;
+
+                navigate.NavigateToDetailFormation();
+            }
         }
 
         private void AppelSkype()

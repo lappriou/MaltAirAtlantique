@@ -69,6 +69,10 @@ namespace MaltAirAtlantique.ViewModel
 
         private void AjouterEmployee()
         {
+            if(EmployeeResultat.Prenom == null)
+            {
+                EmployeeResultat.Prenom = "BugData";
+            }
             DAOEmploye.AjouterEmployeBDD(EmployeeResultat, PosteConcerne);
             EmployeeResultat = new Employee();
             navigate.NavigateToAjouterEmployee();

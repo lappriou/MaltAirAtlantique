@@ -129,7 +129,7 @@ namespace MaltAirAtlantique.Model.DAO
             using (var db = new DBAirAtlantiqueContext())
             {
 
-                var requetteOF = from of in db.OrganismeFormation where of.OrganismeConcerne.OrganismeID == organismeFormationConcerne.OrganismeConcerne.OrganismeID where of.FormationConcerne.FormationID == organismeFormationConcerne.FormationConcerne.FormationID select of;
+                var requetteOF = from of in db.OrganismeFormation where of.OrganismeConcerne.OrganismeID == organismeFormationConcerne.OrganismeConcerne.OrganismeID where of.FormationConcerne.FormationID == LaNavigation.Formation.FormationID select of;
 
                 if (sessionNouvelle.Lieu == null)
                 {

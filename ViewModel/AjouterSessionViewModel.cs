@@ -58,7 +58,7 @@ namespace MaltAirAtlantique.ViewModel
         public AjouterSessionViewModel()
         {
             
-            this.FormationConcerne = LaNavigation.Formation;
+            this.FormationConcerne = DAOFormation.ConstructeurFormation(LaNavigation.Formation);
             this.OrganismeFormationConcerne.FormationConcerne = FormationConcerne;
             this.AjouterSessionCommand = new RelayCommand(AjouterSession);
             this.AppelSkypeCommand = new RelayCommand(AppelSkype);
@@ -78,6 +78,7 @@ namespace MaltAirAtlantique.ViewModel
 
         private void AjouterSession()
         {
+            
             DAOSession.AjouterSession(SessionNouvelle, OrganismeFormationConcerne);
 
             navigate.NavigateToAjouterSession();

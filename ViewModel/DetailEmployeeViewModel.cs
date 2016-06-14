@@ -102,16 +102,21 @@ namespace MaltAirAtlantique.ViewModel
 
         private void DetailSession()
         {
-
-            LaNavigation.Session = SessionSelectionner.SessionConcerne;
-            navigate.NavigateToDetailSession();
+            if (SessionSelectionner.SessionConcerne != null)
+            {
+                LaNavigation.Session = SessionSelectionner.SessionConcerne;
+                navigate.NavigateToDetailSession();
+            }
         }
 
 
         private void DetailFormation()
         {
-            LaNavigation.Formation = this.EmployeFormationSelectionner.FormationConcerne;
-            navigate.NavigateToDetailFormation();
+            if (this.EmployeFormationSelectionner != null)
+            {
+                LaNavigation.Formation = this.EmployeFormationSelectionner.FormationConcerne;
+                navigate.NavigateToDetailFormation();
+            }
         }
 
         #endregion

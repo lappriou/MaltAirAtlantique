@@ -164,11 +164,12 @@ namespace MaltAirAtlantique.Helper
             Accueil.MenuEmployee.IsEnabled = true;
             Accueil.MenuFormation.IsEnabled = true;
             Accueil.MenuSession.IsEnabled = true;
-
+            Accueil.MenuPoste.IsEnabled = true;
             Accueil.MenuAcceuil.Background = null;
             Accueil.MenuEmployee.Background= null;
             Accueil.MenuFormation.Background = null;
             Accueil.MenuSession.Background = null;
+            Accueil.MenuPoste.Background = null;
         }
 
         private void InitVariable()
